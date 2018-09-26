@@ -1,4 +1,8 @@
+/**
+ * Global variables
+ */
 
+var number = 0
 
 /*
 * The "takeANumber()" function accepts two parameterr:
@@ -69,4 +73,18 @@ function currentLine(line) {
 currentLine(["Bill", "Jane", "Ann"])
 
 console.log(currentLine(["Bill", "Jane", "Ann"]))
+
+// takeAUniqueNumber Function -- Pair Programming
+
+function takeAUniqueNumber(line) {
+  number = number + 1
+  // appending a person to the end of the current line
+  line.push(number)
+  var message = `Welcome, ${number}. You are number ${line.length} in line.`
+  return message
+}
+
+takeAUniqueNumber(["Bill", "Jane"], [3])
+
+console.log(takeANumber(["Bill", "Jane"], [3]))
 
